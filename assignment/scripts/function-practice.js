@@ -52,6 +52,7 @@ function isPositive(number) {
   return;
 }
 console.log (isPostive, 9);
+console.log (isPositive, -4);
 
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
@@ -60,8 +61,15 @@ console.log (isPostive, 9);
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
+      if (array !== undefined) {
+        return array[array.length -1];
+      }
+    else {
+      return array.pop;
+    }
 
 }
+console.log (getLast, 4,6,8);
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
