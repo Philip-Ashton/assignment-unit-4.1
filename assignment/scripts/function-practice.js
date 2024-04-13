@@ -15,31 +15,44 @@ console.log('Test - should say "Hello World!"', hello());
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName(name) {
-  return;
+  name('Philip');
+  
+
 }
 // Remember to call the function to test
+console.log('Hello' + helloName + '!');
+helloName;
+
+
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
+function addNumbers(firstNumber, secondNumber) {
+  return firstNumber + secondNumber;
   // return firstNumber + secondNumber;
 }
-
+let result = addNumbers(4, 7);
+console.log('result', result);
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(a, b, c) {
+  return a * b * c;
 }
+let time3 = multiplyThree(8, 2, 4);
+console.log('Three numbers multiplied is ', time3);
 
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
+    return true;
   }
+  else return false;
   return;
 }
+console.log (isPostive, 9);
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 
@@ -78,9 +91,22 @@ function sumAll(array) {
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
 
+function allPositive(arrayInput) {
+  // Declare in the function to start with
+  // an empty array every time.
+  let positiveNumbers = [];
+  for (let num of arrayInput) {
+    console.log('num', num);
+    if (num > 0) {
+      positiveNumbers.push(num);
+    }
+  }
 }
+
+let exampleNumbers = [-4, 10, 2, 0, -100, 4];
+let resultNumbers = allPositive(exampleNumbers);
+console.log('resultNumbers', resultNumbers);
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
