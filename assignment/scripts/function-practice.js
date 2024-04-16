@@ -74,17 +74,15 @@ console.log (getLast);
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(value, array) {
-  while (array = [4, 8, 12]) {
-    if (array = 8) {
+const numbers = [-3, 4, 8, 19];
+function find(numbers) {
+    if (numbers === 8) {
       return true;
     } else {
       return false;
     }
   }
-}
-
-console.log (find);
+console.log (numbers);
 
 // ----------------------
 // Stretch Goals
