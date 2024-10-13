@@ -19,6 +19,8 @@ function helloName(name) {
   return ('Hello, ' + name );
 
 }
+let name = 'Phil';
+
 // Remember to call the function to test
 console.log('Hello', + helloName + '!');
 helloName;
@@ -33,8 +35,8 @@ console.log('result', result);
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(num1, num2, num3) {
+  return  num1 * num2 * num3 ;
 }
 
 
