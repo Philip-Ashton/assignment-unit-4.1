@@ -45,8 +45,8 @@ console.log('the three numbers multiplied together equals ', maths);
 //    or greater than zero, and false otherwise
 function isPositive(number) {
   if (number > 0) {
-    return;
-  }
+    return true;
+  }else return false;
   return;
 }
 // Call the function to test each outcome (true & false) 
