@@ -38,7 +38,8 @@ console.log('result', result);
 function multiplyThree(num1, num2, num3) {
   return  num1 * num2 * num3 ;
 }
-
+let maths = multiplyThree (2, 4, 6);
+console.log('the three numbers multiplied together equals ', maths);
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
